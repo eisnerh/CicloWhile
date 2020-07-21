@@ -17,11 +17,19 @@ namespace CicloWhile
 
             while (x <= 10)
             {
-                varx += x.ToString() + "-";
+                varx += (x + "-");
                 x++;
             }
 
             textBox1.Text = varx;
+
+            do
+            {
+                varx += (x + '/');
+                x++;
+            } while (x<5);
+
+            label1.Text = varx;
         }
     }
 }

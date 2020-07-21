@@ -30,6 +30,21 @@ namespace CicloWhile
             } while (x<5);
 
             label1.Text = varx;
+
+            int[] numeros;
+            numeros = new int[5];
+
+            numeros[0] = 01234;
+            numeros[1] = 12345;
+            numeros[2] = 23456;
+            numeros[3] = 34567;
+            numeros[4] = 45678;
+
+            foreach (var t in numeros)
+            {
+                MessageBox.Show(Convert.ToString(t));
+            }
+
         }
     }
 }
